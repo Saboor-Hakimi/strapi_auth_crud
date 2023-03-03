@@ -1596,6 +1596,29 @@
     colors "~1.2.1"
     string-argv "~0.3.1"
 
+"@sendgrid/client@^7.7.0":
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/@sendgrid/client/-/client-7.7.0.tgz#f8f67abd604205a0d0b1af091b61517ef465fdbf"
+  integrity sha512-SxH+y8jeAQSnDavrTD0uGDXYIIkFylCo+eDofVmZLQ0f862nnqbC3Vd1ej6b7Le7lboyzQF6F7Fodv02rYspuA==
+  dependencies:
+    "@sendgrid/helpers" "^7.7.0"
+    axios "^0.26.0"
+
+"@sendgrid/helpers@^7.7.0":
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/@sendgrid/helpers/-/helpers-7.7.0.tgz#93fb4b6e2f0dc65080440d6a784cc93e8e148757"
+  integrity sha512-3AsAxfN3GDBcXoZ/y1mzAAbKzTtUZ5+ZrHOmWQ279AuaFXUNCh9bPnRpN504bgveTqoW+11IzPg3I0WVgDINpw==
+  dependencies:
+    deepmerge "^4.2.2"
+
+"@sendgrid/mail@7.7.0":
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/@sendgrid/mail/-/mail-7.7.0.tgz#aba09f5ce2e9d8ceee92284c3ea8b4a90b0e38fe"
+  integrity sha512-5+nApPE9wINBvHSUxwOxkkQqM/IAAaBYoP9hw7WwgDNQPxraruVqHizeTitVtKGiqWCKm2mnjh4XGN3fvFLqaw==
+  dependencies:
+    "@sendgrid/client" "^7.7.0"
+    "@sendgrid/helpers" "^7.7.0"
+
 "@sentry/core@6.19.7":
   version "6.19.7"
   resolved "https://registry.yarnpkg.com/@sentry/core/-/core-6.19.7.tgz#156aaa56dd7fad8c89c145be6ad7a4f7209f9785"
@@ -2038,6 +2061,14 @@
   version "4.7.1"
   resolved "https://registry.yarnpkg.com/@strapi/provider-audit-logs-local/-/provider-audit-logs-local-4.7.1.tgz#7dc1017b5c290a07d2f5be931c673b9a22f56639"
   integrity sha512-SItZ+tAChvNai0KchceDzRATVEjavMtVl5BQQm9Ovnxq9lkbO5pUmpv1gBWHc7xAngOIgHSDvbVxCg1q4i5gMg==
+
+"@strapi/provider-email-sendgrid@^4.7.1":
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/@strapi/provider-email-sendgrid/-/provider-email-sendgrid-4.7.1.tgz#ce03a44411763f2f394089a3cf116a842e71f779"
+  integrity sha512-SwZ3319Xlj39FrH+hMiGIJvFK2LfkadL4+ZdQQ3PIb1+KK7MK+PiMAXXJXBt9Bq18+porg/HFir09tOmfcFd2A==
+  dependencies:
+    "@sendgrid/mail" "7.7.0"
+    "@strapi/utils" "4.7.1"
 
 "@strapi/provider-email-sendmail@4.7.1":
   version "4.7.1"
