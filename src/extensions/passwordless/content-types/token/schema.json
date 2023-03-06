@@ -39,12 +39,6 @@
       "type": "boolean",
       "default": true,
       "configurable": false
-    },
-    "todos": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::todo.todo",
-      "mappedBy": "passwordless_token"
     }
   }
 }

@@ -21,14 +21,10 @@
     "completed": {
       "type": "boolean"
     },
-    "passwordless_token": {
+    "users_permissions_user": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::passwordless.token",
-      "inversedBy": "todos"
-    },
-    "uid": {
-      "type": "uid"
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }
